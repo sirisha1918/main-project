@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            h1{
+                color:white;
+            }
+            h3{
+                color:darkred;
+                font-size: 30px;
+            }
+            body{
+                background-color:darkred;
+            }
+            .header {
+               background-color:darkred;
+               padding: 20px;
+               text-align: center;
+               }
+            .container{
+                background:white;
+                width:700px;
+                height:1200px;
+                padding:20px;
+                margin: auto;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+             input[type=text],input[type=password]{
+                width: 100%;
+                padding: 14px 20px;
+                box-sizing: border-box;
+                margin: 10px 0;
+                outline: none;
+                border:2px solid rgb(116, 6, 6);
+                border-radius: 6px;
+            }
+            input[type=text]:focus,input[type=password]:focus{
+                border: 2px orange;
+                transition: 0.9s;
+            }
+           input[type=text area]:focus{
+            width: 100%;
+            padding: 14px 20px;
+            box-sizing: border-box;
+           }
+input[type=submit]{
+                background:darkred;
+                color:white;
+                border-radius:5px;
+                padding: 15px;
+                font-family: verdana;
+                font-size: lem;
+                text-align: center;
+                margin:8px 0;
+                width: 100%;
+            }
+            .forgot{
+                padding:12px 18px;
+            }
+            label{
+                color: darkred;
+                font-size: 20px;
+            }
+           </style>
+       </head>
+       <body>
+            <div class="header">
+                <center><h1>CRIME REPORT MANAGMENT SYSTEM</h1></center>
+                </div>
+                <div class="container">
+            <div class="main">
+              <form>
+                
+                 <center><h3>REGISTRATION FORM</h3></center>
+                  <label><b>FIRST NAME* :</b></label>
+                   <input type="text" name="lname" placeholder="ENTER FIRSTNAME"><br>
+                   <label><b>LAST NAME* :</b></label>
+                   <input type="text" name="lname" placeholder="ENTER LASTNAME"><br>
+                   <label for="email"><b>EMAIL* :</b></label>  
+                    <input type="text" placeholder="Enter Email" name="email" required>  
+                   <label><b>PASSWORD* :</b></label>
+                   <input type="password" name="password" placeholder="ENTER PASSWORD"><br>
+                   <label><b> GENDER* :</b></label><br>
+                    <input type="radio" value="Male" name="gender" checked > Male 
+                    <input type="radio" value="Female" name="gender"> Female 
+                    <input type="radio" value="Other" name="gender"> Other<br><br>
+                    <label> <b>PHONE NUMBER* :</b></label>
+                    <input type="text" name="phonenumber" placeholder="ENTER PHONENUMBER"><br>
+                    <label> <b>ADDRESS LINE 1* :</b></label><br>
+<textarea cols="30" rows="1" placeholder="Address line 1" value="address line 1" required>
+</textarea><br>
+  <label><b>ADDRESS LINE 2* :</b></label><br>
+  <textarea cols="30" rows="1" placeholder="Address line 2" value="address line 2" required>
+</textarea><br>
+<label><b>CITY* :</b></label>
+                   <input type="text" name="city" placeholder="ENTER CITY"><br>
+                   <label><b>STATE* :</b></label>
+                   <input type="text" name="state" placeholder="ENTER STATE"><br>
+                   <label for="text"><b>COUNTRY* :</b></label>
+                     <input type="text" name="country" placeholder="ENTER COUNTRY"><br>
+                   <input type="submit" value="REGISTER"><br>
+               </form>
+           </div>
+           </table>
+       </body>
+       </html>

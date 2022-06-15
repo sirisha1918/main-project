@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD CRIMINAL</title>
+        <style>
+            h1{
+                color:white;
+            }
+            h3{
+                color:darkred;
+                font-size: 30px;
+            }
+            body{
+                background-color:darkred;
+            }
+            .header {
+               background-color:darkred;
+               padding: 20px;
+               text-align: center;
+               }
+            .container{
+                background:white;
+                width:700px;
+                height:700px;
+                padding:20px;
+                margin: auto;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            input[type=text],input[type=password]{
+                width: 100%;
+                padding: 14px 20px;
+                box-sizing: border-box;
+                margin: 10px 0;
+                outline: none;
+                border:2px solid rgb(116, 6, 6);
+                border-radius: 6px;
+            }
+            input[type=text]:focus,input[type=password]:focus{
+                border: 2px orange;
+                transition: 0.9s;
+            }
+           input[type=text area]:focus{
+            width: 100%;
+            padding: 14px 20px;
+            box-sizing: border-box;
+           }
+            input[type=submit]{
+                background:darkred;
+                color:white;
+                border-radius:5px;
+                padding: 15px;
+                font-family: verdana;
+                font-size: lem;
+                text-align: center;
+                margin:8px 0;
+                width: 100%;
+            }
+            .forgot{
+                padding:12px 18px;
+            }
+            label{
+                color: darkred;
+                font-size: 20px;
+            }
+           </style>
+       </head>
+       <body>
+            <div class="header">
+                <center><h1>CRIME REPORT MANAGMENT SYSTEM</h1></center>
+                </div>
+                <div class="container">
+            <div class="main">
+              <form>
+                
+                 <center><h3>ADD CRIMINAL</h3></center>
+                 <label for="s.no"><b>S.NO :</b></label>  
+                    <input type="text" placeholder="ENTER S.NO" name="s.no" required>
+                 <label> <b>CRIMINAL ID* :</b></label>
+                    <input type="text" name="criminal id" placeholder="ENTER CRIMINAL ID"><br>
+                  <label><b>CRIMINAL NAME* :</b></label>
+                   <input type="text" name="lname" placeholder="ENTER FIRSTNAME"><br>  
+                   <label><b> GENDER* :</b></label><br>
+                     <input type="text" name="gender" placeholder="ENTER GENDER">
+                    <label> <b>PHONE NUMBER* :</b></label>
+                    <input type="text" name="phonenumber" placeholder="ENTER PHONENUMBER"><br>
+                    <div class="col-75">
+                        <label><b>TYPE OF CRIME* :</b></label><br>
+        <select id="crime" name="crime">
+           <option value="types Of crime"><b>TYPES OF CRIME</b></option>
+          <option value="robbery">ROBBERY</option>
+          <option value="kidnapping">KIDNAPPING</option>
+          <option value="child abuse">CHILD ABUSE</option>
+          <option value="phishing">PHISHING</option>
+          <option value="cyber crime">CYBER CRIME</option>
+          <option value="harrasment">SEXUAL HARRASMENT</option>
+          <option value="murder">MURDER</option>
+        </select>
+    </div>
+                   <input type="submit" value="REGISTER"><br>
+               </form>
+           </div>
+           </table>
+       </body>
+       </html>

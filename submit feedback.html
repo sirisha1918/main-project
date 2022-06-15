@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{
+    color:white ;
+    padding: 20px;
+  }
+  h3{
+    color: darkred;
+    font-size: 30px;
+  }
+body {
+  background-color:darkred;
+}
+
+* {
+	 box-sizing: border-box;
+}
+ .header {
+               background-color:darkred;
+               padding: 20px;
+               text-align: center;
+               }
+            .container{
+                background:white;
+                width:600px;
+                height:700px;
+                padding:20px;
+                margin: auto;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            input[type=text],input[type=password]{
+                width: 100%;
+                padding: 14px 20px;
+                box-sizing: border-box;
+                margin: 10px 0;
+                outline: none;
+                border:2px solid rgb(116, 6, 6);
+                border-radius: 6px;
+            }
+            input[type=text]:focus,input[type=password]:focus{
+                border: 2px orange;
+                transition: 0.9s;
+            }
+            input[type=submit]{
+                background:darkred;
+                color:white;
+                border-radius:5px;
+                padding: 15px;
+                font-family: verdana;
+                font-size: lem;
+                text-align: center;
+                margin:8px 0;
+                width: 100%;
+            }
+            .forgot{
+                padding:12px 18px;
+            }
+            label{
+                color: darkred;
+                font-size: 20px;
+            }
+              </style>
+       </head>
+       <body>
+<div class="header">
+		<center><h1>CRIME REPORT MANAGMENT SYSTEM</h1></center>
+	</div>
+	<div class="container"> 
+      <center><h3 >SUBMIT FEEDBACK</h3></center>
+    <hr>
+    <label><b>NAME* :</b> </label> 
+    <input type="text" placeholder="Enter Username" name="username" required><br>
+    <label for="email"><b>EMAIL* :</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+    <label for="email"><b>CONTACT NO.* :</b></label>
+    <input type="text" placeholder="Enter Contact no." name="contact no." id="contact no." required><br>
+    <label><b>MESSAGE* :</b> </label>  
+<br>
+<textarea>Enter Message..</textarea><br><br>
+     <button type="submit" class="registerbtn"><b>SUBMIT</b></button>
+  </div>
+	</body>
+</html>
